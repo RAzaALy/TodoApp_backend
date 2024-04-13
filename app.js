@@ -19,12 +19,9 @@ app.use(
     frameguard: true,
   })
 );
-// app.use(cors());
 app.use(
   cors({
     origin: ["https://todo-app-frontend-pearl.vercel.app","http://localhost:5173"],
-    methods: ["GET", "POST", "PUT", "DELETE"],
-    allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true,
   })
 );
