@@ -7,7 +7,7 @@ const userRouter = require('./route/userRoute.js');
 
 const app = express();
 app.use(express.json());
-app.use(cors({origin: [process.env.CLIENT_URL], credentials: true}))
+app.use(cors({origin: ['http://localhost:5173','https://todo-app-frontend-pearl.vercel.app'], credentials: true}))
 app.use(cookieParser());
 
 app.use('/', userRouter);
