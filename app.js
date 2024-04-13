@@ -21,7 +21,10 @@ app.use(
 );
 app.use(
   cors({
-    origin: ["https://todo-app-frontend-pearl.vercel.app","http://localhost:5173"],
+    origin: [
+      "https://todo-app-frontend-pearl.vercel.app",
+      "http://localhost:5173",
+    ],
     credentials: true,
   })
 );
